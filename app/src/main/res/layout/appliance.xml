@@ -8,155 +8,147 @@
     android:background="@drawable/appbackground"
     tools:context=".appliance">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Appliance DashBoard"
-        android:textColorLink="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appliance DashBoard"
+                android:textColorLink="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnOrderPreserved="false"
         android:alignmentMode="alignMargins"
-        android:layout_below="@id/textView"
         android:columnCount="2"
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight='1'
-            android:layout_column="0"
             android:layout_columnWeight='1'
-            android:layout_gravity="fill"
             android:layout_margin="8dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="12dp" >
-
             <LinearLayout
-                android:layout_width="182dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+
+                >
 
                 <ImageView
-                    android:layout_width="167dp"
-                    android:layout_height="151dp"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
                     android:src='@drawable/left'/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:text="LEFT" />
-
-
+                    android:text="LEFT"
+                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight='1'
-            android:layout_column="1"
             android:layout_columnWeight='1'
-            android:layout_gravity="fill"
             android:layout_margin="8dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="12dp" >
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_gravity="center_horizontal|center_vertical">
+                >
 
                 <ImageView
-                    android:layout_width="167dp"
-                    android:layout_height="151dp"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
                     android:src='@drawable/right'/>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:textSize="12sp"
                     android:text="RIGHT" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_row="1"-->
-<!--            android:layout_rowWeight='1'-->
-<!--            android:layout_column="0"-->
-<!--            android:layout_columnWeight='1'-->
-<!--            android:layout_gravity="fill"-->
-<!--            android:layout_margin="8dp"-->
-<!--            app:cardCornerRadius="8dp"-->
-<!--            app:cardElevation="8dp" >-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="vertical"-->
-<!--                android:gravity="center"-->
-<!--                android:layout_gravity="center_horizontal|center_vertical">-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight='1'
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="12dp" >
+            <LinearLayout
 
-<!--                <ImageView-->
-<!--                    android:layout_width="167dp"-->
-<!--                    android:layout_height="151dp"-->
-<!--                    android:src='@drawable/up'></ImageView>-->
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
 
-<!--                <Button-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src='@drawable/up'/>
 
-<!--                    android:text="UP" />-->
-<!--            </LinearLayout>-->
-<!--        </androidx.cardview.widget.CardView>-->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="UP" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight='1'
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="12dp" >
+            <LinearLayout
 
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_row="1"-->
-<!--            android:layout_rowWeight='0'-->
-<!--            android:layout_column="1"-->
-<!--            android:layout_columnWeight='1'-->
-<!--            android:layout_gravity="fill"-->
-<!--            android:layout_margin="8dp"-->
-<!--            app:cardCornerRadius="8dp"-->
-<!--            app:cardElevation="8dp" >-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="vertical"-->
-<!--                android:gravity="center"-->
-<!--                android:layout_gravity="center_horizontal|center_vertical">-->
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
 
-<!--                <ImageView-->
-<!--                    android:layout_width="167dp"-->
-<!--                    android:layout_height="151dp"-->
-<!--                    android:src='@drawable/down'></ImageView>-->
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src='@drawable/down'/>
 
-<!--                <Button-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-
-<!--                    android:text="DOWN" />-->
-<!--            </LinearLayout>-->
-<!--        </androidx.cardview.widget.CardView>-->
-
-
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="DOWN" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </GridLayout>
 
 
+</LinearLayout>
 </RelativeLayout>
