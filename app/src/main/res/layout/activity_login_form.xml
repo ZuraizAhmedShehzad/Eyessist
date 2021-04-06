@@ -18,6 +18,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email" />
@@ -34,24 +35,32 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:onClick="btn_dashboard"
         android:text="Login" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/regBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="btn_signupform"
         android:text="Register" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password ?"
+        android:textAlignment="center" />
 
 
 </LinearLayout>
