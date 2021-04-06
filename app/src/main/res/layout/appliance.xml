@@ -53,13 +53,16 @@
                 >
 
                 <ImageView
+                    android:id="@+id/view1"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
-                    android:src='@drawable/left'/>
+                    android:src='@drawable/left' />
 
                 <Button
+                    android:id="@+id/left"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="onClick"
                     android:text="LEFT"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -81,15 +84,18 @@
                 >
 
                 <ImageView
+                    android:id="@+id/view2"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
-                    android:src='@drawable/right'/>
+                    android:src='@drawable/right' />
 
                 <Button
+                    android:id="@+id/right"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="RIGHT" />
+                    android:onClick="onClick"
+                    android:text="RIGHT"
+                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -109,15 +115,18 @@
                 >
 
                 <ImageView
+                    android:id="@+id/view3"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
-                    android:src='@drawable/up'/>
+                    android:src='@drawable/up' />
 
                 <Button
+                    android:id="@+id/up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="UP" />
+                    android:onClick="onClick"
+                    android:text="UP"
+                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -136,15 +145,18 @@
                 >
 
                 <ImageView
+                    android:id="@+id/view4"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
-                    android:src='@drawable/down'/>
+                    android:src='@drawable/down' />
 
                 <Button
+                    android:id="@+id/down"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="DOWN" />
+                    android:onClick="onClick"
+                    android:text="DOWN"
+                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
