@@ -70,7 +70,7 @@ public class login_form extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(login_form.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),dashboard.class));
+                            startActivity(new Intent(getApplicationContext(),login_form.class));
                         }else {
                             Toast.makeText(login_form.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             //progressBar.setVisibility(View.GONE);

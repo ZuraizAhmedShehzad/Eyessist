@@ -13,7 +13,6 @@
         android:theme="@style/Theme.FypUI">
         <activity android:name=".Menu"></activity>
         <activity android:name=".appliance" />
-        <activity android:name=".dashboard" />
         <activity android:name=".signup_form" />
         <activity android:name=".login_form" />
         <activity android:name=".welcomepage">
