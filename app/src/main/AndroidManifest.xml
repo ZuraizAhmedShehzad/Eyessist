@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fyp.fypui">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,7 @@
         android:theme="@style/Theme.FypUI">
         <activity android:name=".Menu"></activity>
         <activity android:name=".appliance" />
+        <activity android:name=".dashboard" />
         <activity android:name=".signup_form" />
         <activity android:name=".login_form" />
         <activity android:name=".welcomepage">
