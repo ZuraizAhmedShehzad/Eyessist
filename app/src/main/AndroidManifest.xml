@@ -15,6 +15,7 @@
         <activity android:name=".appliance" />
         <activity android:name=".signup_form" />
         <activity android:name=".login_form" />
+        <activity android:name=".mainmenu" />
         <activity android:name=".welcomepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
