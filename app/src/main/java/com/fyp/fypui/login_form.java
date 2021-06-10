@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class login_form extends AppCompatActivity {
 
     EditText mEmail,mPassword;
-    Button mLoginBtn;
+    Button mLoginBtn,mRegBtn;
     TextView mforget;
     //ProgressBar progressBar;
     FirebaseAuth fAuth;
@@ -41,7 +41,14 @@ public class login_form extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.loginBtn);
         mforget= findViewById(R.id.forget);
-        //mRegBtn = findViewById(R.id.regBtn);
+        mRegBtn = findViewById(R.id.regBtn);
+
+        if(fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(),appliance.class));
+            finish();
+        }
+
+
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,24 +126,22 @@ public class login_form extends AppCompatActivity {
                     });
 
                     passwordResetDialog.create().show();
-
-
-
-
-
-
-
-
                         }
+            });
+
+
+            mRegBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),signup_form.class));
+                }
             });
     }
 
 
 
 
-    public void btn_signupform(View view) {
-        startActivity(new Intent(getApplicationContext(),signup_form.class));
-    }
+
     public void btn_dashboard(View view){
         startActivity(new Intent(getApplicationContext(),appliance.class));
     }

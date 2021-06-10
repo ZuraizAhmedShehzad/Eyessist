@@ -22,10 +22,10 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/fullName"
+            android:id="@+id/acPin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name" />
+            android:hint="Ac Pin" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="395dp"
@@ -39,6 +39,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User Name" />
@@ -89,42 +90,17 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="71dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="114dp"
-            android:layout_height="61dp"
-            android:text="Gender"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="99dp"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="114dp"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:textSize="20sp" />
-    </RadioGroup>
 
     <Button
         android:id="@+id/registerBtn"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:text="Register"
-        android:textSize="22dp"/>
+        android:textSize="22dp" />
 
 </LinearLayout>

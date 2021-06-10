@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/item1"
-        android:title="Television"/>
+        android:title="Bulb"/>
     <item android:id="@+id/item2"
         android:title="Fan"/>
     <item android:id="@+id/item3"
-        android:title="Blinds"/>
+        android:title="Lock"/>
     <item android:id="@+id/item4"
-        android:title="Light"/>
+        android:title="Nill"/>
     <item android:id="@+id/item5"
-        android:title="Door"/>
-    <item android:id="@+id/item6"
         android:title="None"/>
+
 
 
 </menu>

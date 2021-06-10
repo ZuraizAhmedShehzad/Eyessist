@@ -1,13 +1,43 @@
 {
   "project_info": {
     "project_number": "243106514083",
+    "firebase_url": "https://eyessist-default-rtdb.firebaseio.com",
     "project_id": "eyessist",
     "storage_bucket": "eyessist.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:243106514083:android:3e24e1cf8d615a47bb2b16",
+        "mobilesdk_app_id": "1:243106514083:android:dd1926f34562f595bb2b16",
+        "android_client_info": {
+          "package_name": "com.example.fb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243106514083-no0hp1k0hifm4lalqaso6c382khhbibs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIFZBA6fl7zlhCP6AMeG-jtwm0yy-y5SU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243106514083-no0hp1k0hifm4lalqaso6c382khhbibs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243106514083:android:0dc2fd9d4ef0f3cabb2b16",
         "android_client_info": {
           "package_name": "com.fyp.fypui"
         }
