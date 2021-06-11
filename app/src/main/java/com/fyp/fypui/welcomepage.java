@@ -10,15 +10,12 @@ import android.view.View;
 public class welcomepage extends AppCompatActivity {
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcomepage);}
+        setContentView(R.layout.welcomepage);
+        startActivity(new Intent(getApplicationContext(), login_form.class));
 
-        public void btn_loginform(View v){
-            startActivity(new Intent(getApplicationContext(), login_form.class));
 
-        }
     }
+}
