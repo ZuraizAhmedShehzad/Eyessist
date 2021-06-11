@@ -15,6 +15,8 @@ public class welcomepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcomepage);
         startActivity(new Intent(getApplicationContext(), login_form.class));
+        finish();
+
 
 
     }
