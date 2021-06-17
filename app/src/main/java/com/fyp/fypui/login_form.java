@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -34,6 +35,7 @@ public class login_form extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_form);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.password);
@@ -44,7 +46,7 @@ public class login_form extends AppCompatActivity {
         mRegBtn = findViewById(R.id.regBtn);
 
         if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(),appliance.class));
+            startActivity(new Intent(getApplicationContext(),Menu.class));
             finish();
         }
 
@@ -95,7 +97,7 @@ public class login_form extends AppCompatActivity {
                     final EditText resetMail = new EditText(v.getContext());
                     final AlertDialog.Builder passwordResetDialog = new AlertDialog.Builder(v.getContext());
                     passwordResetDialog.setTitle("Reset Password ?");
-                    passwordResetDialog.setMessage("Enter Your Email To Received Reset Link.");
+                    passwordResetDialog.setMessage("Enter Your Email To Receive Reset Link.");
                     passwordResetDialog.setView(resetMail);
 
                     passwordResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
